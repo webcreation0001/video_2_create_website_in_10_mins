@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/output.css">
+  <title>Foodie-Hub</title>
+  <style>
+    html{
+        box-sizing: border-box; margin: 0; padding: 0;
+    }
+
+    .navbar a:hover{
+        color: white; background-color: rgb(132,9,162);
+        border-radius: 2rem; padding: 0.8rem;
+    }
+    #main-heading{
+        color: black;
+        margin-top: -5rem;
+    }
+    #main-paragraph{
+        color: rgb(93,94,94);
+        margin: 3rem;
+    }
+
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 py-4">
+    <div class="container mx-auto flex justify-between items-center px-4" style="background-image:
+     linear-gradient(to right , rgb(234,184,247),rgb(235,235,235));margin-top: -20px;
+     padding: 2rem 5.5rem 2rem 5.5rem;">
+      <a href="#" class="text-2xl font-bold text-white" style="color: black;
+      font-size: 2rem;">Foodie-Cafe</a>
+
+      <ul class="flex space-x-4 navbar text-white" style="color: rgb(132,9,162);font-size: 1.4rem;
+      font-weight: 700;margin: 0 0.7rm 0 0.7rem;">
+        <li><a href="#" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#menu" class="hover:text-gray-300">Menu</a></li>
+        <li><a href="#reservation" class="hover:text-gray-300">Reservations</a></li>
+        <li><a href="#team" class="hover:text-gray-300">Our-Team</a></li>
+        <li><a href="#about-us" class="hover:text-gray-300">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-gray-900 text-white" style="padding: 180px 0 180px 0;
+  background-image: url(./img/Landing-image.png);margin-top: -1.5rem;">
+    <div class="container mx-auto flex flex-col items-center py-12 px-4" style="width: 60%;
+    margin-left: -30px;">
+      <h1 class="text-5xl font-bold mb-4 " id="main-heading">Welcome to Foodie-Baba</h1>
+      <p class="text-gray-300 text-xl text-center" id="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section id="menu" class="bg-gray-100 py-12" style="text-align: center;background-color: rgb(240,240,240);">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8" style="font-size: 3rem; word-spacing: 0.3rem;">Our Menu</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="./img/burger.jpg" alt="Menu Item 1" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Menu Item 1</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="./img/momos.jpg" alt="Menu Item 2" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Menu Item 2</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="./img/ice-cream.jpg" alt="Menu Item 3" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Menu Item 3</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="py-12" id="about-us" style="background-color: black; padding: 2rem 0 6rem 0;">
+    <div class="container mx-auto px-4" style="text-align: center;">
+      <h1 class="text-5xl font-bold text-center mb-8" style="font-size: 3rem; color: white;
+      margin-bottom: 5rem;">About Us</h1>
+      <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
+        <div class="w-full sm:w-1/2">
+          <img src="./img/about-us.jpg" style="width: 45%;margin-left: 7rem;" alt="About Us" class="w-full rounded-lg">
+        </div>
+        <div class="w-full sm:w-1/2" style="color: white; margin-left: -5rem;">
+          <h3 class="text-2xl font-bold mb-4">Our Story</h3>
+          <p style="margin-top: 3rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Morbi hendrerit cursus urna, ac finibus justo ultrices eu. Phasellus vel placerat ipsum. Nunc non nunc eget enim cursus venenatis. Etiam ut eros turpis.</p>
+          <p>Vivamus in metus vel est aliquet rutrum. Cras lacinia nibh nec erat faucibus, eget maximus ex tristique. Curabitur vitae mi ex. Nullam finibus arcu euismod massa fermentum, in dictum neque eleifend. Sed efficitur lectus sit amet magna suscipit dictum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="bg-gray-200 py-12" style="background-color: rgb(132,9,162);">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8" style="font-size: 3rem; color: white;">Our Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="./img/p-1.jpg" alt="Team Member" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">John Doe</h3>
+          <p class="text-gray-600">Chef</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="./img/p-2.jpg" alt="Team Member" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Jane Smith</h3>
+          <p class="text-gray-600">Sous Chef</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="./img/p-3.jpg" alt="Team Member" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">David Johnson</h3>
+          <p class="text-gray-600">Bartender</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="bg-gray-800 py-12" id="reservation" style="background-color: black;">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-white text-center mb-8">Make a Reservation</h2>
+      <form>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="mb-4">
+            <label for="name" class="block text-white mb-2">Name</label>
+            <input type="text" id="name" class="w-full py-2 px-4 bg-gray-700 text-white rounded">
+          </div>
+          <div class="mb-4">
+            <label for="date" class="block text-white mb-2">Date</label>
+            <input type="date" id="date" class="w-full py-2 px-4 bg-gray-700 text-white rounded">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="mb-4">
+            <label for="email" class="block text-white mb-2">Email</label>
+            <input type="email" id="email" class="w-full py-2 px-4 bg-gray-700 text-white rounded">
+          </div>
+          <div class="mb-4">
+            <label for="time" class="block text-white mb-2">Time</label>
+            <input type="time" id="time" class="w-full py-2 px-4 bg-gray-700 text-white rounded">
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-white mb-2">Message</label>
+          <textarea id="message" rows="4" class="w-full py-2 px-4 bg-gray-700 text-white rounded"></textarea>
+        </div>
+        <button type="submit" class="px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-gray-900 py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-white text-center mb-8">Contact Us</h2>
+      <p class="text-gray-300 text-center mb-4">123 Restaurant St, City, State, ZIP</p>
+      <p class="text-gray-300 text-center mb-4">Phone: 123-456-7890</p>
+      <p class="text-gray-300 text-center">Email: info@restaurant.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-4 text-white text-center" style="background-color: rgb(203,93,231);">
+    <p style="color: white;">&copy; 2023 Restaurant. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
